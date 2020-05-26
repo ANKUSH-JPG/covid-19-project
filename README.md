@@ -1,4 +1,4 @@
-# covid-19-project(MACHINE LEARNING INTEGIRATION WITH DEVOPS)
+# covid-19-project(MACHINE LEARNING INTEGRATION WITH DEVOPS)
 Many of the people simply just learn Machine learning and build their Projects but the automation part which is also needed is never implemented . The implementation of Machine learning with DevOps is what the Industry needs. 
 And this is the reason why most of the projects in Machine learning fails.
 # I would like to thank Mr. Vimal Daga for giving us such a great opportunity to learn and grow under him and create such a industry needed project
@@ -15,3 +15,12 @@ I have trained my machine learning model (which basically predicts the corona vi
 6. Job3 : Train your model and predict accuracy or metrics.
 7. Job4 : if metrics accuracy is less than 80% , then tweak the machine learning model architecture.
 8. Job5: Retrain the model or notify that the best model is being created
+
+# WORK DONE :
+1. firstly let me show you the docker file i used in order to create my docker container up and running with tensorflow , keras and other modules in it.
+![Screenshot (396)](https://user-images.githubusercontent.com/51692515/82863028-b879cc00-9f3e-11ea-9bde-ae76e3d3ab3d.png)
+
+2. Next i created the code for training my model , sending the mail , and a config.yaml file which is basically used for tweaking our model . the code for the same is present in the above github repo.
+
+3. I created the remote hooks so , that the code is automatically pushed on to git hub and then downloaded in the github workspace i created using jenkins so that it can be deployed in container.
+![Screenshot (399)](https://user-images.githubusercontent.com/51692515/82863415-bb28f100-9f3f-11ea-9eb0-d1c001147d38.png)
