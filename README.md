@@ -78,6 +78,24 @@ The downstream project for tweaking model is create container . once it is compl
 The best part is to visualize through the images or video.
 So , here are the images in order to get what is happening in the project.
  
+![Screenshot (392)](https://user-images.githubusercontent.com/51692515/82869080-4f4c8580-9f4b-11ea-83b6-8ab918c54134.png)
+
+![Screenshot (398)](https://user-images.githubusercontent.com/51692515/82869121-5bd0de00-9f4b-11ea-867d-a76ed6077643.png)
+
+![Screenshot (403)](https://user-images.githubusercontent.com/51692515/82869143-63908280-9f4b-11ea-944e-63bd3c5bbcf8.png)
+
+![Screenshot (404)](https://user-images.githubusercontent.com/51692515/82869154-68553680-9f4b-11ea-9752-9ac215160b9c.png)
+
+![Screenshot (393)](https://user-images.githubusercontent.com/51692515/82869090-52e00c80-9f4b-11ea-86fb-2075050c8ba3.png)
+
+![Screenshot (400)](https://user-images.githubusercontent.com/51692515/82869134-60959200-9f4b-11ea-8e0c-658126ff9909.png)
+
+![Screenshot (394)](https://user-images.githubusercontent.com/51692515/82869097-54113980-9f4b-11ea-814b-ad065768da1d.png)
+
+![Screenshot (395)](https://user-images.githubusercontent.com/51692515/82869100-55426680-9f4b-11ea-8050-6a03af5dd77c.png)
+
+![Screenshot (397)](https://user-images.githubusercontent.com/51692515/82869111-58d5ed80-9f4b-11ea-88d5-ab1d5584e04f.png)
+
 
 
 
