@@ -96,13 +96,13 @@ So , here are the images in order to get what is happening in the project.
 
 ![Screenshot (404)](https://user-images.githubusercontent.com/51692515/82869154-68553680-9f4b-11ea-9752-9ac215160b9c.png)
 
+![Screenshot (410)](https://user-images.githubusercontent.com/51692515/82876498-81171980-9f56-11ea-93d1-59caecde5ea6.png)
 
+![Screenshot (411)](https://user-images.githubusercontent.com/51692515/82876511-883e2780-9f56-11ea-8e05-fefbbac3b8c0.png)
 
+![Screenshot (412)](https://user-images.githubusercontent.com/51692515/82876517-8aa08180-9f56-11ea-9ab5-3baa8b05478c.png)
 
-
-
-
-
+![Screenshot (413)](https://user-images.githubusercontent.com/51692515/82876523-8c6a4500-9f56-11ea-9499-c0104752b2ea.png)
 
 
 # REFERENCES:
