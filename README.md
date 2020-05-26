@@ -24,3 +24,67 @@ I have trained my machine learning model (which basically predicts the corona vi
 
 3. I created the remote hooks so , that the code is automatically pushed on to git hub and then downloaded in the github workspace i created using jenkins so that it can be deployed in container.
 ![Screenshot (399)](https://user-images.githubusercontent.com/51692515/82863415-bb28f100-9f3f-11ea-9eb0-d1c001147d38.png)
+
+4. Now let my show you the task/jobs created in the jenkins to automate the process.
+![Screenshot (392)](https://user-images.githubusercontent.com/51692515/82863633-40140a80-9f40-11ea-8a70-63ab50a4d937.png)
+
+So , i created these four jobs using the build pipeline in jenkins:
+1. github( it will pull all the code from the git hub)
+2. create container(which would mount the workspace where the code is present and run the container)
+3. accuracy (which would predict the accuracy and mail it to the user in order to get the progress report)
+4. tweaking model(which would tweak our model and train it again in order to get the better accuracy)
+
+NOW LET'S HAVE A LOOK AT EACH STEP IN DETAIL:
+
+# GIT HUB:
+we triggered git hub using the trigger build remotely option . The jenkins configuration is as shown below :
+
+![Screenshot (401)](https://user-images.githubusercontent.com/51692515/82864218-b36a4c00-9f41-11ea-839c-8142546ea4b0.png)
+
+![Screenshot (402)](https://user-images.githubusercontent.com/51692515/82864223-b5340f80-9f41-11ea-9377-6ab4714d032f.png)
+
+we are using the remote workspace to mount on to our docker container thats why we didnt change the mounting directory. but one can change as per the requirement.
+we created create container as a downstream project for git hub.
+
+# CREATE CONTAINER:
+create container has a upstream project git hub , which will trigger it when it is succesfully executed.
+Now, let me show the configuration of the create container job.
+
+
+![Screenshot (405)](https://user-images.githubusercontent.com/51692515/82864643-9f731a00-9f42-11ea-86af-2933c6bfe00e.png)
+
+![Screenshot (406)](https://user-images.githubusercontent.com/51692515/82864646-a13cdd80-9f42-11ea-879d-a05a5a1f5cc3.png)
+
+The above configuration will create a container and start the model training in the container.
+The downstream project is the accuracy job . so , it will be triggered once the create container job is finished.
+
+# ACCURACY:
+Now, let me show the accuracy job configuratuion:
+![Screenshot (407)](https://user-images.githubusercontent.com/51692515/82864959-566f9580-9f43-11ea-8c14-86aaac5b0c28.png)
+
+![Screenshot (408)](https://user-images.githubusercontent.com/51692515/82864963-58d1ef80-9f43-11ea-96fb-8b00e2a19961.png)
+
+firstly , it would mail the accuracy of the project to the user . The code for mail.py is present in the repo above.
+Next, it will check the accuracy . if it is less than 80 % then the model will be tweaked else the model will not be tweaked and the job will fail with exit 1.
+
+# TWEAKING MODEL:
+It is a downstream project of the accuracy job . once it is triggered it will start tweaking the model and then train the model again with the tweaked code.
+the tweaked code is as shown below:
+![Screenshot (409)](https://user-images.githubusercontent.com/51692515/82865343-207ee100-9f44-11ea-8fb4-c0d7f9013f07.png)
+
+The downstream project for tweaking model is create container . once it is completed it again looks for the container.
+
+# WORKING IN ACTION:
+The best part is to visualize through the images or video.
+So , here are the images in order to get what is happening in the project.
+ 
+
+
+
+# REFERENCES:
+The above project i created was very awesome and great for me .
+1.https://www.youtube.com/
+2.https://stackoverflow.com/
+3.https://www.geeksforgeeks.org/
+
+
